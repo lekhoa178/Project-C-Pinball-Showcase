@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-28T22:31:59+07:00",
+  "source_repository": "lekhoa178/Project-C---Pinball",
+  "source_visibility": "private",
+  "branch": "main",
+  "revision": "4119d4202cc59050837bf2cbeffb409a4a0551c0",
+  "revision_committed_at": "2026-10-28T10:40:18Z",
+  "commit_count": 252,
+  "scope": "All commits reachable from the recorded main-branch revision, including merges and all authors; excludes uncommitted work.",
+  "github_verification": {
+    "endpoint": "https://api.github.com/graphql",
+    "authenticated": true,
+    "query": "query { repository(owner: \"lekhoa178\", name: \"Project-C---Pinball\") { nameWithOwner isPrivate defaultBranchRef { name target { ... on Commit { oid committedDate history { totalCount } } } } } }",
+    "observed_response": {
+      "data": {
+        "repository": {
+          "nameWithOwner": "lekhoa178/Project-C---Pinball",
+          "isPrivate": true,
+          "defaultBranchRef": {
+            "name": "main",
+            "target": {
+              "oid": "4119d4202cc59050837bf2cbeffb409a4a0551c0",
+              "committedDate": "2026-10-28T10:40:18Z",
+              "history": { "totalCount": 252 }
+            }
+          }
+        }
+      }
+    }
+  },
+  "local_verification": {
+    "is_shallow_repository": false,
+    "revision": "4119d4202cc59050837bf2cbeffb409a4a0551c0",
+    "command": "git rev-list --count HEAD",
+    "result": 252,
+    "remote_main_revision_from_git_ls_remote": "4119d4202cc59050837bf2cbeffb409a4a0551c0"
+  },
+  "verification_limit": "Owner-published static snapshot, not a GitHub-signed attestation. Independent inspection of the underlying history requires private-repository access."
+}
